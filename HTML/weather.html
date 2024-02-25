@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/weather.css">
+    <link rel="stylesheet" href="../CSS/weather-tab.css">
+    <link rel="stylesheet" href="../CSS/weather-phone.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+    <title>MyWeather</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <div id="header">
+                <ul id="inner-header">
+                    <li id="header-ele1">
+                        <img src="../images/logo.webp" alt="logo">
+                    </li>
+                    <li id="screen-ele1" class="screen-ele">
+                        <input type="text" placeholder="Enter your city name" id="cityNameInput">
+                        <button id="search">Search</button>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <section id="content">
+            <aside>
+                <div id="aside-outer">
+                    <div id="outer-detail">
+                        <ul id="inner-detail">
+                            <ul id="most-inner-detail">
+                                <li id="detail-ele1" class="detail-ele">Place</li>
+                                <li id="detail-ele2" class="detail-ele"><img id="weather-img" src="" alt="weather"></li>
+                            </ul>
+                            <ul id="most-inner-detail2">
+                                <li id="detail-ele3" class="detail-ele main-Wdetails">Temperature&nbsp;&nbsp;
+                                    :&nbsp;&nbsp;
+                                    <span id="temp"></span> &nbsp; &deg;C
+                                </li>
+                                <li id="detail-ele4" class="detail-ele main-Wdetails">Feel like&nbsp;&nbsp;
+                                    :&nbsp;&nbsp;
+                                    <span id="feel_temp"></span> &nbsp; &deg;C
+                                </li>
+                                <li id="detail-ele5" class="detail-ele main-Wdetails">Weather&nbsp;&nbsp; :&nbsp;&nbsp;
+                                    <span id="weath"></span>
+                                </li>
+                                <li id="detail-ele6" class="detail-ele main-Wdetails">Weather description&nbsp;&nbsp;
+                                    :&nbsp;&nbsp; <span id="weath_desc"></span></li>
+                            </ul>
+                        </ul>
+                    </div>
+
+                </div>
+            </aside>
+            <section id="content-screen">
+                <div id="outer-screen">
+                    <ul id="inner-screen">
+                        <li id="screen-ele2" class="screen-ele">
+                            <img id="weather-video" src="" alt="OuterSide">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <!-- Start of JS -->
+    <script src="../JS/weather.js"></script>
+</body>
+
+</html>
