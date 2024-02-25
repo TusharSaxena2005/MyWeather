@@ -1,0 +1,31 @@
+@media (min-width:650px) and (max-width: 1024px) {
+    #content {
+        flex-direction: column;
+    }
+
+    aside {
+        height: 35%;
+        width: 100%;
+    }
+
+    #content-screen {
+        height: 40%;
+    }
+
+    #inner-detail {
+        flex-direction: row;
+    }
+
+    #most-inner-detail {
+        height: 100%;
+    }
+
+    #most-inner-detail2 {
+        height: 85%;
+    }
+
+    #content-screen {
+        height: 63%;
+        width: 100%;
+    }
+}

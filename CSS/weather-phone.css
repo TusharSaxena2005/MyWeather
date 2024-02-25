@@ -1,0 +1,48 @@
+@media screen and (max-width:650px) {
+    #content-screen {
+        display: none;
+    }
+
+    header {
+        height: 14%;
+    }
+
+    #header {
+        margin-top: 0;
+    }
+
+    #inner-header {
+        align-items: center;
+    }
+
+    #header-ele1 {
+        max-height: 75px;
+        min-height: 75px;
+        max-width: 60px;
+        min-width: 60px;
+    }
+
+    #cityNameInput {
+        width: 150px;
+    }
+
+    .main-Wdetails {
+        font-size: 1.4rem;
+    }
+
+    #outer-detail {
+        height: 88%;
+    }
+
+    #detail-ele1 {
+        font-size: 2.2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    #detail-ele2 {
+        height: 75%;
+        display: flex;
+        justify-content: center;
+    }
+}
