@@ -30,6 +30,7 @@ let currentLocation = async () => {
         let geo = await LatLon();
         let latitude = geo.lat;
         let longitude = geo.lon;
+        // To get API key go to  https://openweathermap.org/ and create your own API Key without API key this website won't work . I hope you understand.
         let LatLonApi = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid={Enter Your API Key}&units=metric`);
         let resp = await LatLonApi.json();
         let CityName = resp.name;
@@ -82,6 +83,7 @@ let SearchPlace = async () => {
             let PlaceToGeo = await PlaceToGeoApi.json();
             let latitude = PlaceToGeo.results[0].latitude
             let longitude = PlaceToGeo.results[0].longitude
+            // To get API key go to  https://openweathermap.org/ and create your own API Key without API key this website won't work . I hope you understand.
             let LatLonApi = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid={Enter Your API Key}&units=metric`);
             let resp = await LatLonApi.json();
             let CityName = resp.name;
