@@ -30,7 +30,7 @@ let currentLocation = async () => {
         let geo = await LatLon();
         let latitude = geo.lat;
         let longitude = geo.lon;
-        let LatLonApi = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=f711ce9d27808ec2532a4d6623de298a&units=metric`);
+        let LatLonApi = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid={Enter Your API Key}&units=metric`);
         let resp = await LatLonApi.json();
         let CityName = resp.name;
         let Main_temperature = Math.ceil(resp.main.temp);
@@ -82,7 +82,7 @@ let SearchPlace = async () => {
             let PlaceToGeo = await PlaceToGeoApi.json();
             let latitude = PlaceToGeo.results[0].latitude
             let longitude = PlaceToGeo.results[0].longitude
-            let LatLonApi = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=f711ce9d27808ec2532a4d6623de298a&units=metric`);
+            let LatLonApi = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid={Enter Your API Key}&units=metric`);
             let resp = await LatLonApi.json();
             let CityName = resp.name;
             let Main_temperature = Math.ceil(resp.main.temp);
